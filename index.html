@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Tega’s World è il mondo Minecraft vanilla della community di Tega: un posto per giocare, costruire e lasciare un pezzo di storia."
+    />
+    <meta name="theme-color" content="#0b1212" />
+    <title>Tega’s World — Il nostro mondo, non un server</title>
+    <link rel="icon" type="image/jpeg" href="/assets/tegas-world-mark.jpg" />
+    <link rel="preload" as="image" href="/assets/01-hero-tega.jpg" fetchpriority="high" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/site-config.js" defer></script>
+    <script src="/app.js" defer></script>
+  </head>
+  <body class="home-page">
+    <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+    <header class="site-header site-header--overlay" data-site-header>
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Tega’s World, home">
+          <img data-asset="logo" alt="" width="38" height="38" />
+          <span>Tega’s World</span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Apri il menu"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span class="menu-toggle__lines" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Navigazione principale">
+          <a href="#mondo">Il mondo</a>
+          <a href="#come-funziona">Come entrare</a>
+          <a href="#regole">Regole</a>
+          <a class="nav-cta" href="/entra/">Entra ora <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenuto">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__visual">
+          <div class="hero__atmosphere" aria-hidden="true" data-parallax="0.12"></div>
+          <img
+            src="/assets/01-hero-tega.jpg"
+            alt="Tega cammina verso casa tra i sentieri e le lanterne del mondo Minecraft, di notte."
+            width="1366"
+            height="768"
+            fetchpriority="high"
+            data-parallax="0.2"
+          />
+          <div class="hero__motes" aria-hidden="true" data-parallax="0.9">
+            <span class="hero__mote hero__mote--left"></span>
+            <span class="hero__mote hero__mote--right"></span>
+            <span class="hero__mote hero__mote--path"></span>
+          </div>
+          <div class="hero__overlay">
+            <div class="container hero__content">
+              <img
+                class="hero__logo reveal"
+                src="/assets/tegas-world-logo-optimized.jpg"
+                alt="Logo illustrato di Tega’s World"
+                width="768"
+                height="768"
+                data-parallax="0.84"
+              />
+              <div class="hero__copy reveal" data-parallax="0.72">
+                <p class="eyebrow">Il mondo della community di Tega</p>
+                <h1 class="hero__title" id="hero-title">
+                  Il nostro mondo.<br />
+                  <em>Non un server.</em>
+                </h1>
+              </div>
+              <div class="hero__actions reveal" data-parallax="0.96">
+                <p class="hero__description">Un mondo vanilla nato in live. Ora ci costruiamo una storia, insieme.</p>
+                <a class="text-link hero__cta" href="/entra/">Entra ora <span aria-hidden="true">→</span></a>
+                <a class="hero__map-link" href="#mondo">Guarda il mondo <span aria-hidden="true">↓</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="world-section" id="mondo" aria-labelledby="world-title">
+        <div class="container">
+          <div class="world-section__heading reveal">
+            <div>
+              <p class="eyebrow">Live world&nbsp; / &nbsp;Mappa</p>
+              <h2 class="section-heading" id="world-title">Il mondo</h2>
+            </div>
+            <a class="world-map-link" data-map-link target="_blank" rel="noopener noreferrer">
+              Apri la mappa completa <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="map-window reveal">
+            <iframe
+              title="Mappa live di Tega’s World, esplorabile in modo interattivo"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              data-map-frame
+            ></iframe>
+            <div class="map-window__fallback" data-map-fallback hidden>
+              <p>La mappa non si apre qui. Nessun problema: puoi guardarla direttamente sul sito che la ospita.</p>
+              <a class="button button--primary" data-map-link target="_blank" rel="noopener noreferrer">Apri la mappa <span class="button__arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="map-caption">
+            <span>Il mondo, visto da fuori. La mappa si aggiorna con lui.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-story" id="vita" aria-labelledby="story-title">
+        <div class="container home-story__layout">
+          <figure class="home-story__image reveal">
+            <span class="scene-atmosphere scene-atmosphere--home" aria-hidden="true" data-parallax="0.52"></span>
+            <img
+              src="/assets/02-casa-tega.jpg"
+              alt="La casa di Tega tra i campi, gli alberi e le lanterne del mondo."
+              width="1366"
+              height="768"
+              loading="lazy"
+              decoding="async"
+              data-parallax="0.22"
+            />
+          </figure>
+          <div class="home-story__copy reveal" data-parallax="0.76">
+            <p class="eyebrow">Una casa nel mondo</p>
+            <h2 class="section-heading" id="story-title">Il mondo di Tega.</h2>
+            <p>Tega’s World nasce come il mio mondo Minecraft e si è trasformato nel mondo che condivido con la community.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="community-scene" aria-labelledby="community-title">
+        <figure class="community-scene__image reveal">
+          <span class="scene-atmosphere scene-atmosphere--community" aria-hidden="true" data-parallax="0.52"></span>
+          <img
+            src="/assets/03-community.jpg"
+            alt="La community si ritrova nel villaggio, tra case illuminate e lanterne."
+            width="1366"
+            height="768"
+            loading="lazy"
+            decoding="async"
+            data-parallax="0.22"
+          />
+          <div class="community-scene__embers" aria-hidden="true" data-parallax="0.9">
+            <span class="community-scene__ember"></span>
+            <span class="community-scene__ember"></span>
+            <span class="community-scene__ember"></span>
+          </div>
+          <figcaption class="community-scene__caption" data-parallax="0.78">
+            <p class="eyebrow">Tega’s World, insieme</p>
+            <h2 id="community-title">Un mondo costruito insieme.</h2>
+            <p>Non ci interessa riempire la lista dei giocatori: ci piace conoscerci, costruire insieme e tornare a vedere come cresce il mondo. Un mondo tra amici.</p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="exploration-section" aria-labelledby="exploration-title">
+        <div class="container exploration-layout">
+          <div class="exploration-copy reveal" data-parallax="0.74">
+            <p class="eyebrow">Sentieri da scoprire</p>
+            <h2 class="section-heading" id="exploration-title">Ogni angolo ha una storia.</h2>
+            <p>Se ti va, il prossimo angolo del mondo potrebbe essere il tuo.</p>
+            <a class="text-link" href="/entra/">Entra nel mondo <span aria-hidden="true">→</span></a>
+          </div>
+          <figure class="exploration-image reveal">
+            <span class="scene-atmosphere scene-atmosphere--exploration" aria-hidden="true" data-parallax="0.52"></span>
+            <img
+              src="/assets/04-esplorazione.jpg"
+              alt="Un sentiero tra gli alberi e la foschia blu, illuminato dalle lanterne."
+              width="1366"
+              height="768"
+              loading="lazy"
+              decoding="async"
+              data-parallax="0.2"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="feature-section" id="vita-del-mondo" aria-labelledby="features-title">
+        <div class="container">
+          <div class="feature-section__top reveal">
+            <div>
+              <p class="eyebrow">La vita del mondo</p>
+              <h2 class="section-heading" id="features-title">Le cose che ci tengono qui.</h2>
+            </div>
+            <p class="section-copy">Niente di complicato. Solo quello che serve per giocare insieme e sentirsi a casa.</p>
+          </div>
+          <ol class="feature-list">
+            <li class="feature reveal">
+              <span class="feature__number">01</span>
+              <h3>Vanilla survival</h3>
+              <p>Il mondo resta Minecraft survival. Si esplora, si raccoglie, si costruisce: come piace a te.</p>
+            </li>
+            <li class="feature reveal">
+              <span class="feature__number">02</span>
+              <h3>Una community</h3>
+              <p>Il mondo prende forma con chi lo abita. Ogni costruzione, grande o piccola, ne fa parte.</p>
+            </li>
+            <li class="feature reveal">
+              <span class="feature__number">03</span>
+              <h3>Costruzioni protette</h3>
+              <p>Il sistema di claim protegge quello che costruisci, così puoi prenderti il tuo spazio con calma.</p>
+            </li>
+            <li class="feature reveal">
+              <span class="feature__number">04</span>
+              <h3>Scambi tra giocatori</h3>
+              <p>Si vende quello che avanza, si compra quello che serve e si trova spazio per costruire.</p>
+            </li>
+            <li class="feature reveal">
+              <span class="feature__number">05</span>
+              <h3>Un mondo che cambia</h3>
+              <p>Si esplora, si aggiunge una casa, una strada, un motivo per tornare — anche quando Tega è offline.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="details-section" aria-label="Economia e zona di Tega">
+        <div class="container details-grid">
+          <article class="detail-panel reveal">
+            <span class="detail-panel__number">Economia del mondo</span>
+            <h3>Ci si scambia una mano.</h3>
+            <p>Puoi vendere materiali ad altri giocatori e comprare quello che ti manca. C’è anche uno shop comune per alcune materie prime. E se ti serve spazio, puoi usare il denaro per acquistare altri chunk, secondo le regole del mondo. Niente gare: è solo un modo pratico per scambiarsi una mano.</p>
+          </article>
+          <article class="detail-panel detail-panel--warm reveal">
+            <span class="detail-panel__number">La casa di Tega</span>
+            <h3>Un pezzo della storia del mondo.</h3>
+            <p>La casa di Tega fa parte delle live e dei contenuti di Tega’s World. Per questo è protetta: qui non si rompono blocchi, non si aprono container, non si prendono oggetti e non si modifica la costruzione.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process-section" id="come-funziona" aria-labelledby="process-title">
+        <div class="container">
+          <div class="process-heading reveal">
+            <div>
+              <p class="eyebrow">Da spettatore a giocatore</p>
+              <h2 class="section-heading" id="process-title">Come si entra.</h2>
+            </div>
+            <p class="section-copy">Il Discord è il punto di partenza. Per il resto ti guidiamo noi, un passaggio alla volta.</p>
+          </div>
+          <div class="process-grid">
+            <article class="process-step reveal">
+              <span class="process-step__number">01</span>
+              <h3>Segui Tega</h3>
+              <p>Su Twitch o TikTok. Le live sono il posto dove è cominciato tutto.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="process-step__number">02</span>
+              <h3>Passa dal Discord</h3>
+              <p>È lì che la community si organizza e spiega come chiedere l’accesso.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="process-step__number">03</span>
+              <h3>Verifica il supporto</h3>
+              <p>L’accesso è riservato agli abbonati/supporter, secondo le indicazioni nel Discord.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="process-step__number">04</span>
+              <h3>Associa Minecraft</h3>
+              <p>Comunica il tuo username seguendo la procedura. Quando è abilitato, puoi entrare.</p>
+            </article>
+          </div>
+          <div class="process-note reveal"><span aria-hidden="true">↳</span><span><strong>Il sito non gestisce account né whitelist.</strong> Tutte le indicazioni aggiornate e i dettagli per collegarsi si trovano nel Discord.</span></div>
+        </div>
+      </section>
+
+      <section class="rules-section" id="regole" aria-labelledby="rules-title">
+        <div class="container rules-layout">
+          <div class="reveal">
+            <p class="eyebrow">Le cose importanti</p>
+            <h2 class="section-heading" id="rules-title">Gioca come<br />giocheresti con gli amici.</h2>
+            <p class="section-copy">Non serve un regolamento infinito per capirsi. Basta trattare il mondo e le persone con rispetto.</p>
+          </div>
+          <ul class="rules-list reveal">
+            <li>Non griefare.</li>
+            <li>Non rubare.</li>
+            <li>Niente cheat o exploit.</li>
+            <li>Rispetta le costruzioni degli altri.</li>
+            <li>Lascia giocare tranquillo chi ne ha voglia.</li>
+            <li>Rispetta le persone, sempre.</li>
+            <li>PvP solo se c’è consenso.</li>
+            <li>Il buon senso vale più di una lista.</li>
+          </ul>
+        </div>
+      </section>
+
+      <figure class="forest-banner container--wide reveal">
+        <span class="scene-atmosphere scene-atmosphere--forest" aria-hidden="true" data-parallax="0.5"></span>
+        <img
+          src="/assets/05-forest-banner.jpg"
+          alt="Un sentiero tra le lanterne attraversa la foresta del mondo di Tega."
+          width="1366"
+          height="768"
+          loading="lazy"
+          decoding="async"
+          data-parallax="0.18"
+        />
+        <span class="forest-leaf" aria-hidden="true" data-parallax="0.9"></span>
+      </figure>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand"><strong>Tega’s World</strong><span>Un mondo fatto insieme.</span></div>
+          <nav class="footer-links" aria-label="Link e community">
+            <a data-social="twitch" target="_blank" rel="noopener noreferrer">@teeeeega su Twitch</a>
+            <a data-social="tiktok" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a data-social="discord" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="/privacy/">Privacy</a>
+          </nav>
+        </div>
+        <div class="footer-meta">
+          <p>© <span data-current-year></span> Tega’s World</p>
+          <p>Fatto con calma, in mezzo alla foresta.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
